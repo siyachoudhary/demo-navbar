@@ -1,0 +1,63 @@
+.navbar{
+    display: flex;
+    background-color: #35a8bd;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: .9;
+}
+.name{
+    margin-right: auto;
+    color: #ffffff;
+    margin-left: 30px;
+    display: flex;
+}
+
+.logoImg{
+    width: 100px;
+    display: inline-block;
+    horiz-align: center;
+}
+
+.yourName{
+    display: inline-block;
+    horiz-align: center;
+    padding: 15px;
+    margin-left: 5px;
+    color: white;
+}
+
+.links{
+    margin: 25px;
+    display: inline-block;
+    align-content: center;
+    padding-right: 40px;
+}
+
+.links a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.links a.selected{
+    color: white;
+    font-Weight: 900;
+}
+
+
+.links a:hover{
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #5bdcf3;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin-top: 7.75%;
+}

@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.about{
+  background-color: gray;
+  padding: 400px;
+}
+
+.projects{
+  background-color: #c0f0ff;
+  padding: 400px;
+}
+
+.awards{
+  background-color: gray;
+  padding: 400px;
+}

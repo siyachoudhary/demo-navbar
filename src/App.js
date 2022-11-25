@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/navbar";
+import MyButton from "./components/MyButton";
 
 function App() {
+
+    const navLinkList=[
+        ["aboutBtn", "#aboutMe", "ABOUT ME"],
+        ["projectsBtn", "#projects", "PROJECTS"],
+        ["awardsBtn", "#awards", "AWARDS"]
+    ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar name={"JOHN DOE"} image={"profile.png"} navLinkList ={navLinkList}></Navbar>
+        <div className={"content"}>
+            <div id={"aboutMe"}>
+                <div className={"about"}>
+                    <h1>ABOUT ME HERE</h1>
+                    <MyButton btnText={"test"}></MyButton>
+                </div>
+            </div>
+            <div id={"projects"}>
+                <div className={"projects"}>
+                    <h1>PROJECTS HERE</h1>
+                </div>
+            </div>
+            <div id={"awards"}>
+                <div className={"awards"}>
+                    <h1>AWARDS HERE</h1>
+                </div>
+            </div>
+        {/*    anytime a new category div is created, add an id (newDivId), create a new link in Navbar.js, and in the href={} add #newDivId  */}
+        </div>
     </div>
   );
 }
